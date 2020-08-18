@@ -79,7 +79,10 @@ gray3 = cv2.cvtColor(src, cv2.COLOR_BGR2GRAY)
 # gray4 = cv2.cvtColor(src, cv2.COLOR_BGR2HSV)
 # gray5 = cv2.cvtColor(src, cv2.COLOR_BGR2YCrCb)
 
-# threshold 스레쉬홀드
+
+# 이진화 =>
+# threshold 스레쉬홀드 :: 임계값
+# 예제상 100 이 임계값
 ret, dst7 = cv2.threshold(gray3, 100, 255, cv2.THRESH_BINARY)
 print("=====> ret?")
 print(ret)
